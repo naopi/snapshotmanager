@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SnapShot Manager</title>
+    <link rel='stylesheet' href='./stylesheets/normalize.css' />
+    <link rel='stylesheet' href='./stylesheets/style.css' />
+    <link rel='stylesheet' href='./lib/bootstrap-3.3.5-dist/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='./lib/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css' />
+  </head>
+  <body>
+    <h1>SnapShot Manager</h1>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="titlefield" class="col-sm-2 control-label">Title</label>
+            <div class="input-group col-sm-10">
+                <div class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></div>
+                <input type="text" class="form-control" id="titlefield" placeholder="IS2015-01:課題">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="tagfield" class="col-sm-2 control-label" >Tag</label>
+            <div class="input-group col-sm-10">
+                <div class="input-group-addon"><i class="glyphicon glyphicon-tag"></i></div>
+                <input type="text" class="form-control" id=”tagfield" placeholder="before">
+            </div>
+        </div>
+        <div><button type="button" class="btn btn-primary"><i class="glyphicon glyphicon glyphicon-download-alt"></i>今すぐ実行する</button></div>
+      <P>
+            <div class="form-group">
+            <label for="exampleInputEmail1" class="col-sm-2 control-label">課題締切日時</label>
+            <div class="input-group col-sm-10">
+                <div class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></div>
+                <input type="datetime-local" class="form-control" id="limitdate" placeholder="">
+            </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Disable
+            </label>
+        </div>
+        <div><button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-calendar"></i> 予約する</button></div>
+    </form>
+  </body>
+</html>
